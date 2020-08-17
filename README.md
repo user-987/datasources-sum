@@ -1,6 +1,6 @@
 # datasources-sum
 
-A simple operation od adding numerical data from different sources. date
+A simple operation of adding numerical data from different sources.
 
 ## Getting Started
 
