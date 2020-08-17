@@ -27,10 +27,10 @@ public class DatabaseService implements NumericDataProvider {
 
     @Override
     public NumericInput getData() {
-        InputValue intValueFromDb = repository.findById(SECRET_VALUE)
+        InputValue inputValueFromDb = repository.findById(SECRET_VALUE)
                 .orElse(new InputValue(0d));
 
-        NumericInput value = mapper.map(intValueFromDb);
+        NumericInput value = mapper.map(inputValueFromDb);
         log.info("Getting constant (or default zero) value from database: {}", value.getValue());
         return value;
     }
